@@ -1,0 +1,115 @@
+
+/* Fonts */
+/* Catamaran */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Briyani */
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,ul,ol{
+margin: 0 !important;
+}
+:root{
+    --catamaran-font:'Catamaran', sans-serif;
+    --briyani-font:'', sans-serif;
+    --color-white:#ffffff;
+    --blue-linear: linear-gradient(180deg, #34A6B1 0%, #2483B1 100%);
+    --theme-color:#57bcc2;
+    --title-color:#18676c;
+}
+.container{
+    width: 1300px;
+}
+img{
+    width: 100% !important;
+}
+/* Fonts */
+.catamaran-font{
+    font-family: 'Catamaran', sans-serif;
+}
+.briyani-font{
+font-family: 'Biryani', sans-serif;
+}
+/* Navbar */
+.navbar{
+    box-shadow: 0px 1px 16px 1px rgba(0, 0, 0, 0.1);
+    position: sticky !important;
+    top: 0;
+    background-color: var(--color-white);
+}
+.navbar .nav-item .nav-link{
+color: #4d4d4d;
+font-family: var(--briyani-font);
+
+}
+.navbar .contactus-btn .nav-link{
+    color: var(--color-white);
+    padding: 8px 20px !important;
+    background: var(--blue-linear);
+    border-radius: 50px;
+}
+.total-height{
+    height: 100vh;
+}
+/* Hero Page */
+.hero-page{
+    background-color: #57BCC2;
+
+}
+.hero-page .textbox-main{
+    padding: 0 63.5px;
+
+}
+.hero-page .textbox-main .textbox{
+   margin-top: 8rem;
+}
+.hero-page .textbox-main .sub-textbox{
+    margin-top: 5rem;
+ }
+ .hero-page .animation-mouse{
+    width: 60px;
+ }
+ .hero-page .animation-mouse img{
+width: 100%;
+ }
+.hero-page .title{
+    font-family: var(--catamaran-font);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 60px;
+    color: var(--title-color);
+}
+.hero-page .description{
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+.hero-page .img-box-main{
+    padding: 0;
+}
+ .book-apt-btn{
+    display: inline-block;
+    padding: 8px 23px;
+    background:var(--color-white);
+    box-shadow: 0px 0px 30px rgba(24, 103, 108, 0.25);
+    text-decoration: none;
+    color: var(--title-color);
+}
+.hero-page .img-box-main .img-box{
+    height: 700px;
+}
+.hero-page .img-box-main .img-box img{
+    object-fit: cover;
+    height: 100%;
+}
+/* Services Page */
+.services-img{
+width: 80px;
+}
