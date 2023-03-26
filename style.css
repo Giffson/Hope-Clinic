@@ -17,7 +17,7 @@ margin: 0 !important;
 }
 :root{
     --catamaran-font:'Catamaran', sans-serif;
-    --briyani-font:'', sans-serif;
+    --briyani-font:'Biryani', sans-serif;
     --color-white:#ffffff;
     --blue-linear: linear-gradient(180deg, #34A6B1 0%, #2483B1 100%);
     --theme-color:#57bcc2;
@@ -28,6 +28,10 @@ margin: 0 !important;
 }
 img{
     width: 100% !important;
+}
+
+.section-padding{
+    padding:80px 0;
 }
 /* Fonts */
 .catamaran-font{
@@ -112,4 +116,26 @@ width: 100%;
 /* Services Page */
 .services-img{
 width: 80px;
+}
+.services{
+
+}
+.services .services-card-main{
+    width: 22%;
+}
+.services .services-card{
+    font-family: var(--briyani-font);
+    padding: 50px 15px 35px;
+    background-color: #e7e7e7;
+    transition: 0.2s ease;
+    overflow: hidden;
+}
+.services .services-card:hover{
+    border: 3px outset var(--title-color);
+}
+.services .services-card .services-title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
 }
