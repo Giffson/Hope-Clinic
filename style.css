@@ -61,6 +61,19 @@ font-family: var(--briyani-font);
 .total-height{
     height: 100vh;
 }
+.title{
+    font-weight: 600;
+    color: var(--title-color);
+    font-family: var(--briyani-font);
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+}
+.description{
+    text-align: center;
+    font-size: 18px;
+    color: #989898;
+}
 /* Hero Page */
 .hero-page{
     background-color: #57BCC2;
@@ -88,12 +101,14 @@ width: 100%;
     font-size: 56px;
     line-height: 60px;
     color: var(--title-color);
+    text-align: left;
 }
 .hero-page .description{
     font-size: 18px;
     line-height: 30px;
     color: var(--title-color);
     text-transform: uppercase;
+    text-align: left;
 }
 .hero-page .img-box-main{
     padding: 0;
@@ -128,14 +143,47 @@ width: 80px;
     padding: 50px 15px 35px;
     background-color: #e7e7e7;
     transition: 0.2s ease;
-    overflow: hidden;
+    border: 3px solid transparent;
 }
 .services .services-card:hover{
-    border: 3px outset var(--title-color);
+    border-color: var(--title-color);
 }
 .services .services-card .services-title{
     font-size: 18px;
     font-weight: 600;
     line-height: 30px;
     text-transform: uppercase;
+    color: var(--title-color);
 }
+.services .services-card .services-img{
+    margin-bottom: 30px;
+}
+.services .services-card .services-description{
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--title-color);
+    margin-bottom: 30px !important;
+}
+/* Specialist */
+.specialist .specialist-card{
+    width: 22%;
+}
+.specialist .specialist-card .specialist-text{
+    padding: 15px 20px;
+    background-color: #DCDCDC;
+    color: #323232;
+    transition: .4s ease;
+}
+.specialist .specialist-card .specialist-text:hover{
+    background-color: var(--title-color);
+    color: var(--color-white);
+}
+.specialist .specialist-card .specialist-text h3{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.specialist .specialist-card .specialist-text p{
+    font-size: 16px;
+}
+/* About us */
