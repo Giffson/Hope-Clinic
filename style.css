@@ -15,6 +15,9 @@
 h1,h2,h3,h4,h5,h6,p,a,ul,ol{
 margin: 0 !important;
 }
+a{
+    text-decoration: none !important;
+}
 :root{
     --catamaran-font:'Catamaran', sans-serif;
     --briyani-font:'Biryani', sans-serif;
@@ -317,4 +320,40 @@ position: relative;
 position: absolute;
 bottom: 0;
 left: 0;
+}
+
+/* Footer */
+.footer{
+    background-color: #2ABAC3;
+}
+.footer .row{
+    
+}
+.footer ul{
+    list-style-type: none;
+    gap: 2rem;
+    padding-left: 0;
+}
+.footer ul li a{
+    color: #085055;
+}
+.footer ul li a:hover{
+    color: var(--color-white);
+}
+.footer .quick-links ul li:not(:last-child){
+margin-bottom: 0.5rem;
+}
+.footer .links-menu{
+    padding: 1rem;
+}
+.footer .google-map{
+    padding: 0;
+}
+.footer .footer-menu{
+    position: relative;
+}
+.footer .footer-menu .copyright-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
