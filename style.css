@@ -55,6 +55,8 @@ font-family: 'Biryani', sans-serif;
 .navbar .nav-item .nav-link{
 color: #4d4d4d;
 font-family: var(--briyani-font);
+line-height: 16px;
+padding: 0px !important;
 
 }
 .navbar .contactus-btn .nav-link{
@@ -103,10 +105,36 @@ font-family: var(--briyani-font);
     margin-top: 10rem;
  }
  .hero-page .animation-mouse{
-    width: 30px;
+    position: relative;
+   min-width: 30px;
+    min-height: 60px;
+    border-radius: 25px;
+    border: 3px solid var(--color-white);
  }
- .hero-page .animation-mouse img{
-width: 100%;
+ .hero-page .animation-mouse::before{
+    transform: translate(-50%,-50%);
+position: absolute;
+left: 50%;
+top: 25%;
+    content: " ";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: var(--color-white);
+    animation: mouseEffect 2s  ease-in-out infinite;
+ }
+ @keyframes mouseEffect {
+    0%{ 
+        top:25%;
+    }
+    90%{
+        top:75%;
+         opacity: 1;
+
+        }
+    100%{ top:75%;
+        opacity: 0;
+    }
  }
 .hero-page .title{
     font-family: var(--catamaran-font);
@@ -122,6 +150,7 @@ width: 100%;
     color: var(--title-color);
     text-transform: uppercase;
     text-align: left;
+    width: 80%;
 }
 .hero-page .sub-textbox .description{
     line-height: 22px;
@@ -156,7 +185,7 @@ width: 80px;
     padding: 50px 15px 35px;
     background-color: #e7e7e7;
     transition: 0.2s ease;
-    border: 3px solid transparent;
+    border: 5px solid transparent;
 }
 .services .services-card:hover{
     border-color: var(--title-color);
@@ -281,7 +310,7 @@ height: 100vh;
 }
 .testimonial .testimonial-text .sub-title{
     color: var(--title-color);
-
+    text-transform: uppercase;
 }
 .testimonial .testimonial-text .testimonial-name{
     text-transform: uppercase;
@@ -310,8 +339,8 @@ height: 100vh;
 }
 .doctor-quotes .container .row{
 border: 10px solid var(--title-color);
-height: 450px;
-padding: 50px 30px 0;
+height: 485px;
+padding: 40px 30px 0;
 }
 .doctor-quotes-img{
 position: relative;
@@ -320,6 +349,26 @@ position: relative;
 position: absolute;
 bottom: 0;
 left: 0;
+}
+.doctor-quotes .sub-title{
+    color: var(--title-color);
+    text-transform: uppercase;
+}
+.doctor-quotes .doctor-quotes-text .description{
+color: var(--title-color);
+line-height: 164%;
+font-size: 16px;
+}
+.doctor-quotes .doctor-quotes-text .testimonial-name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2ABAC3;
+}
+.doctor-quotes .doctor-quotes-text .testimonial-place{
+    color: #7D7D7D;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 /* Footer */
@@ -331,12 +380,13 @@ left: 0;
 }
 .footer ul{
     list-style-type: none;
-    gap: 2rem;
     padding-left: 0;
 }
 .footer ul li a{
     color: #085055;
+    transition: 0.5s ease;
 }
+
 .footer ul li a:hover{
     color: var(--color-white);
 }
@@ -356,4 +406,48 @@ margin-bottom: 0.5rem;
     position: absolute;
     bottom: 0;
     left: 0;
+    padding: 0 25px;
+}
+
+/* @media screen and (min-width:1440px){
+    
+}
+@media (min-width:1200px) and (max-width:1339.90px){
+    
+}
+@media (min-width:1024px) and (max-width:1199.90px){
+    
+}
+@media (min-width:992px) and (max-width:1023.90px){
+    
+}
+@media (min-width:768px) and (max-width:991.90px){
+    
+}
+@media (min-width:567px) and (max-width:767.90px){
+    
+}
+@media (min-width:475px) and (max-width:566.90px){
+    
+}
+@media (min-width:356px) and (max-width:476.90px){
+    
+}
+@media (min-width:255px) and (max-width:355.90px){
+    
+} */
+@media (min-width:1201px){
+    
+}
+@media (min-width:1025px) and (max-width:1200px){
+    
+}
+@media (min-width:769px) and (max-width:1024px){
+    
+}
+@media  (min-width:481px) and (max-width:768px){
+    
+}
+@media and (min-width:320px) and (max-width:480px){
+    
 }
