@@ -436,18 +436,71 @@ margin-bottom: 0.5rem;
 @media (min-width:255px) and (max-width:355.90px){
     
 } */
-@media screen and (min-width:1201px){
+@media screen and (min-width:1440px){
+ 
+}
+
+@media screen and (min-width:1200px){
+    .hero-page .title{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .hero-page .text-box .description {
+        width: inherit;
+    }
+    .hero-page .sub-textbox .description {
+        width: 80%;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .testimonial .testimonial-text .sub-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:992px){
+    .hero-page .textbox-main {
+        padding: 0 90px;
+    }
+    .hero-page .title{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .hero-page .text-box .description {
+        width: inherit;
+    }
+    .hero-page .sub-textbox .description {
+        width: 80%;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .testimonial .testimonial-text .sub-title {
+        font-size: 1.3rem;
+    }
+    .services .services-card .services-description {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .specialist .specialist-card .specialist-text h3 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+    .specialist .specialist-card .specialist-text p {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:768px){
     
 }
-@media  screen and(min-width:1025px) and (max-width:1200px){
-    
-}
-@media  screen and(min-width:769px) and (max-width:1024px){
-    
-}
-@media   screen and(min-width:481px) and (max-width:768px){
-    
-}
-@media  screen and (min-width:320px) and (max-width:480px){
+@media screen and (min-width:576px){
     
 }
