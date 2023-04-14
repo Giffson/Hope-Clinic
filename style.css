@@ -272,6 +272,10 @@ width: 80px;
 }
 /* appoinment */
 .appointment{
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
 .appointment .text-box{
     background-image: url(images/appointment-img.png);
@@ -352,7 +356,6 @@ width: 80px;
 
 /* doctor-quotes */
 .doctor-quotes{
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -471,7 +474,9 @@ margin-bottom: 0.5rem;
     
 } */
 @media screen and (min-width:1440px){
- 
+    .hero-page .textbox-main .sub-textbox {
+        margin-top: 12rem;
+    }
 }
 
 @media screen and (min-width:1200px) and (max-width:1439.90px){
