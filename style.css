@@ -30,6 +30,10 @@ a{
 .container{
     width: 1300px;
 }
+.row{
+    margin: 0;
+}
+
 img{
     width: 100% !important;
 }
@@ -52,18 +56,23 @@ font-family: 'Biryani', sans-serif;
     z-index: 10;
     background-color: var(--color-white);
 }
+.navbar .container-fluid{
+    padding: 0 60px;
+}
 .navbar .nav-item .nav-link{
 color: #4d4d4d;
 font-family: var(--briyani-font);
 line-height: 16px;
 padding: 0px !important;
-
+font-size: 13px;
 }
+
 .navbar .contactus-btn .nav-link{
     color: var(--color-white);
     padding: 8px 20px !important;
     background: var(--blue-linear);
     border-radius: 50px;
+
 }
 .total-height{
     height: 100vh;
@@ -75,11 +84,13 @@ padding: 0px !important;
     font-size: 36px;
     line-height: 45px;
     text-align: center;
+    text-transform: uppercase;
 }
 .description{
     text-align: center;
     font-size: 18px;
     color: #989898;
+    font-family: var(--briyani-font);
 }
 .book-apt-btn{
     display: inline-block;
@@ -88,6 +99,7 @@ padding: 0px !important;
     box-shadow: 0px 0px 30px rgba(24, 103, 108, 0.25);
     text-decoration: none;
     color: var(--title-color);
+    font-size: 18px;
 }
 /* Hero Page */
 .hero-page{
@@ -95,7 +107,7 @@ padding: 0px !important;
 
 }
 .hero-page .textbox-main{
-    padding: 0 63.5px;
+    padding: 0 60px;
 
 }
 .hero-page .textbox-main .textbox{
@@ -139,7 +151,7 @@ top: 25%;
 .hero-page .title{
     font-family: var(--catamaran-font);
     font-weight: 600;
-    font-size: 56px;
+    font-size: 45px;
     line-height: 60px;
     color: var(--title-color);
     text-align: left;
@@ -311,6 +323,8 @@ height: 100vh;
 .testimonial .testimonial-text .sub-title{
     color: var(--title-color);
     text-transform: uppercase;
+    font-size: 22px;
+    line-height: 25px;
 }
 .testimonial .testimonial-text .testimonial-name{
     text-transform: uppercase;
@@ -328,6 +342,10 @@ height: 100vh;
 }
 .testimonial .testimonial-container .slider-dots .dots.active{
     background-color: var(--title-color);
+}
+.testimonial .description{
+    font-size: 16px;
+    line-height: 26px;
 }
 
 /* doctor-quotes */
@@ -353,10 +371,12 @@ left: 0;
 .doctor-quotes .sub-title{
     color: var(--title-color);
     text-transform: uppercase;
+    font-size: 22px;
+    line-height: 25px;
 }
 .doctor-quotes .doctor-quotes-text .description{
 color: var(--title-color);
-line-height: 164%;
+line-height: 24px;
 font-size: 16px;
 }
 .doctor-quotes .doctor-quotes-text .testimonial-name{
@@ -374,13 +394,21 @@ font-size: 16px;
 /* Footer */
 .footer{
     background-color: #2ABAC3;
+    font-family: var(--briyani-font);
 }
 .footer .row{
     
 }
+.footer .links-menu .title{
+font-weight: 600;
+color: var(--title-color);
+font-size: 34px;
+line-height: 37px;
+}
 .footer ul{
     list-style-type: none;
     padding-left: 0;
+
 }
 .footer ul li a{
     color: #085055;
@@ -408,6 +436,10 @@ margin-bottom: 0.5rem;
     left: 0;
     padding: 0 25px;
 }
+    .footer .footer-menu .copyright-container p{
+        font-size: 13px;
+        font-family: var(--briyani-font);
+    }
 
 /* @media screen and (min-width:1440px){
     
@@ -440,7 +472,11 @@ margin-bottom: 0.5rem;
  
 }
 
-@media screen and (min-width:1200px){
+@media screen and (min-width:1200px) and (max-width:1439.90px){
+    .container,.container-fluid{
+        padding: 0 60px;
+        margin: 0 auto;
+    }
     .hero-page .title{
         font-size: 45px;
         line-height: 50px;
@@ -462,25 +498,51 @@ margin-bottom: 0.5rem;
     }
 }
 
-@media screen and (min-width:992px){
+@media screen and (min-width:992px) and (max-width:1199.90px){
+    .container,.container-fluid{
+        padding: 0 60px;
+        margin: 0 auto;
+    }
+
+    .navbar .navbar-brand{
+        width: 45%;
+    }
+    .navbar .navbar-nav{
+        column-gap:1.5rem !important;
+    }
+    .book-apt-btn{
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .hero-page .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .hero-page .textbox-main .textbox {
+        margin-top: 4rem;
+    }
     .hero-page .textbox-main {
-        padding: 0 90px;
+        padding: 0 60px;
     }
-    .hero-page .title{
-        font-size: 36px;
-        line-height: 40px;
+    .hero-page .description{
+        width: 85%;
     }
-    .hero-page .text-box .description {
-        width: inherit;
-    }
+    
     .hero-page .sub-textbox .description {
         width: 80%;
     }
     .section-padding {
         padding: 60px 0;
     }
+    .appointment .form-box form{
+        width: 100%;
+    }
     .title{
         font-size: 28px;
+        line-height: 35px;
+    }
+    .description{
+        font-size: 16px !important;
     }
     .testimonial .testimonial-text .sub-title {
         font-size: 1.3rem;
@@ -488,6 +550,9 @@ margin-bottom: 0.5rem;
     .services .services-card .services-description {
         font-size: 12px;
         line-height: 18px;
+    }
+    .services .services-card .services-title{
+        font-size: 17px;
     }
     .specialist .specialist-card .specialist-text h3 {
         font-size: 18px;
@@ -497,9 +562,49 @@ margin-bottom: 0.5rem;
     .specialist .specialist-card .specialist-text p {
         font-size: 14px;
     }
+    .doctor-quotes{
+        height: inherit;
+    }
+    .doctor-quotes .title{
+        margin-bottom: 8px !important;
+    }
+    .doctor-quotes .sub-title{
+        font-size: 1.3rem;
+    }
+    .aboutus .aboutus-text p{
+        font-size:14px !important;
+        line-height: 22px;
+        margin-bottom: 1rem !important;
+
+    }
+    .appointment .white-text-box * {
+        width: 400px;
+    }
+    .aboutus .aboutus-text {
+     
+    }
+    .footer .links-menu .title {
+    color: #085055;
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 0.8rem !important;
+        text-transform: capitalize;
+    }
+    /* .about-us .container{
+        width:95%;
+    } */
 }
 @media screen and (min-width:768px){
-    
+    .navbar .container-fluid {
+        padding: 0 40px;
+    }
+    .hero-page .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .hero-page .textbox-main {
+        padding: 0 40px;
+    }
 }
 @media screen and (min-width:576px){
     
