@@ -176,7 +176,7 @@ top: 25%;
 }
 
 .hero-page .img-box-main .img-box{
-    height: 700px;
+    height: 100%;
 }
 .hero-page .img-box-main .img-box img{
     object-fit: cover;
@@ -594,16 +594,35 @@ margin-bottom: 0.5rem;
         width:95%;
     } */
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) and (max-width:991.90px){
     .navbar .container-fluid {
         padding: 0 40px;
     }
     .hero-page .title {
-        font-size: 40px;
-        line-height: 50px;
+        font-size: 25px;
+        line-height: 30px;
     }
     .hero-page .textbox-main {
         padding: 0 40px;
+    }
+    .hero-page .description {
+        font-size: 14px !important;
+        line-height: 22px !important;
+        width: 100%;
+    }
+    .services .services-card-main-container{
+       
+        margin: 0 auto;
+        display: grid !important;
+             gap: 3rem;
+            grid-template-columns: repeat(2,1fr);
+    }
+    .services .services-card-main{
+        width: 100%;
+    }
+    .title{
+        font-size: 28px;
+        line-height: 35px;
     }
 }
 @media screen and (min-width:576px){
