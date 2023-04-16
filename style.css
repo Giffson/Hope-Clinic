@@ -759,7 +759,7 @@ margin-bottom: 0.5rem;
         height: 100dvh;
        justify-content: space-evenly;
         padding: 0 0 2rem;
-        top: 60px;
+        top: 65px;
         left: 0;
         background-color: #ffffffe6;
     }
@@ -987,6 +987,7 @@ margin-bottom: 0.5rem;
         background-color: #fff9;
         padding: 1.5rem 1rem;
         border-radius: 20px;
+        font-size: 14px;
     }
     .hero-page .textbox-main .textbox {
         margin-top:inherit;
@@ -1135,6 +1136,9 @@ margin-bottom: 0.5rem;
     }
     .appointment .form-box {
         padding: 0 20px;
+    }
+    .footer .links-menu{
+        padding: 1rem 0 1.5rem;
     }
     
 }
