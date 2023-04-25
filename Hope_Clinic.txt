@@ -1,0 +1,1144 @@
+
+/* Fonts */
+/* Catamaran */
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Briyani */
+@import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,ul,ol{
+margin: 0 !important;
+}
+a{
+    text-decoration: none !important;
+}
+:root{
+    --catamaran-font:'Catamaran', sans-serif;
+    --briyani-font:'Biryani', sans-serif;
+    --color-white:#ffffff;
+    --blue-linear: linear-gradient(180deg, #34A6B1 0%, #2483B1 100%);
+    --theme-color:#57bcc2;
+    --title-color:#18676c;
+    --grey-title-color:#4C4C4C;
+}
+.container{
+    width: 1300px;
+}
+.row{
+    margin: 0;
+}
+
+img{
+    width: 100% !important;
+}
+
+.section-padding{
+    padding:80px 0;
+}
+/* Fonts */
+.catamaran-font{
+    font-family: 'Catamaran', sans-serif;
+}
+.briyani-font{
+font-family: 'Biryani', sans-serif;
+}
+/* scrollbar */
+::-webkit-scrollbar{width: 6px;}
+::-webkit-scrollbar-thumb{background: var(--title-color); border-radius: 10px;}
+::-webkit-scrollbar-track{background-color: #ffffff; box-shadow: 0px 1px 16px 1px rgba(0, 0, 0, 0.16);}
+/* Navbar */
+.navbar{
+    box-shadow: 0px 1px 16px 1px rgba(0, 0, 0, 0.16);
+    position: sticky !important;
+    top: 0;
+    z-index: 10;
+    background-color: var(--color-white);
+}
+.navbar .container-fluid{
+    padding: 0 60px;
+}
+.navbar .nav-item .nav-link{
+color: #4d4d4d;
+font-family: var(--briyani-font);
+line-height: 16px;
+padding: 0px !important;
+font-size: 13px;
+}
+
+.navbar .contactus-btn .nav-link{
+    color: var(--color-white);
+    padding: 8px 20px !important;
+    background: var(--blue-linear);
+    border-radius: 50px;
+
+}
+.total-height{
+    height: 100vh;
+}
+.title{
+    font-weight: 600;
+    color: var(--title-color);
+    font-family: var(--briyani-font);
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.description{
+    text-align: center;
+    font-size: 18px;
+    color: #989898;
+    font-family: var(--briyani-font);
+}
+.book-apt-btn{
+    display: inline-block;
+    padding: 8px 23px;
+    background:var(--color-white);
+    box-shadow: 0px 0px 30px rgba(24, 103, 108, 0.25);
+    text-decoration: none;
+    color: var(--title-color);
+    font-size: 18px;
+}
+/* Hero Page */
+.hero-page{
+    background-color: #57BCC2;
+
+}
+.hero-page .textbox-main{
+    padding: 0 60px;
+    position: relative;
+}
+.hero-page .textbox-main .textbox{
+   margin-top: 8rem;
+}
+.hero-page .textbox-main .sub-textbox{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 80%;
+ }
+ .hero-page .animation-mouse{
+    position: relative;
+   min-width: 30px;
+    min-height: 60px;
+    border-radius: 25px;
+    border: 3px solid var(--color-white);
+ }
+ .hero-page .animation-mouse::before{
+    transform: translate(-50%,-50%);
+position: absolute;
+left: 50%;
+top: 25%;
+    content: " ";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: var(--color-white);
+    animation: mouseEffect 2s  ease-in-out infinite;
+ }
+ @keyframes mouseEffect {
+    0%{ 
+        top:25%;
+    }
+    90%{
+        top:75%;
+         opacity: 1;
+
+        }
+    100%{ top:75%;
+        opacity: 0;
+    }
+ }
+.hero-page .title{
+    font-family: var(--catamaran-font);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 60px;
+    color: var(--title-color);
+    text-align: left;
+}
+.hero-page .description{
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--title-color);
+    text-transform: uppercase;
+    text-align: left;
+    width: 80%;
+}
+.hero-page .sub-textbox .description{
+    line-height: 22px;
+    font-size: 16px;
+    color: var(--title-color);
+    text-transform: inherit;
+    width: 70%;
+}
+.hero-page .img-box-main{
+    padding: 0;
+}
+
+.hero-page .img-box-main .img-box{
+    height: 90vh;
+}
+.hero-page .img-box-main .img-box img{
+    object-fit: cover;
+    height: 100%;
+}
+/* Services Page */
+.services-img{
+width: 80px;
+}
+.services{
+
+}
+.services .services-card-main{
+    width: 22%;
+}
+.services .services-card{
+    font-family: var(--briyani-font);
+    padding: 50px 15px 35px;
+    background-color: #e7e7e7;
+    transition: 0.2s ease;
+    border: 5px solid transparent;
+}
+.services .services-card:hover{
+    border-color: var(--title-color);
+}
+.services .services-card .services-title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+.services .services-card .services-img{
+    margin-bottom: 30px;
+}
+.services .services-card .services-description{
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--title-color);
+    margin-bottom: 30px !important;
+}
+/* Specialist */
+.specialist .specialist-card{
+    width: 22%;
+}
+.specialist .specialist-card .specialist-text{
+    padding: 15px 20px;
+    background-color: #DCDCDC;
+    color: #323232;
+    transition: .4s ease;
+}
+.specialist .specialist-card:hover .specialist-text{
+    background-color: var(--title-color);
+    color: var(--color-white);
+}
+.specialist .specialist-card .specialist-text h3{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+    font-family: var(--briyani-font);
+}
+
+.specialist .specialist-card .specialist-text p{
+    font-size: 16px;
+    font-family: var(--briyani-font);
+}
+.specialist .specialist-card .specialist-img img{
+
+}
+/* About us */
+.aboutus{
+
+}
+.aboutus .aboutus-img img{
+    border: 10px solid var(--color-white);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+}
+.aboutus .aboutus-text{
+    width: 54%;
+}
+.aboutus .aboutus-text p{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 26px;
+    color: #989898;
+}
+.aboutus .title{
+    text-align: left;
+}
+.aboutus .aboutus-text .book-apt-btn{
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+}
+/* appoinment */
+.appointment{
+}
+.appointment .text-box{
+    background-image: url(images/appointment-img.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding: 0;
+}
+.appointment .white-text-box, .appointment .form-box{
+    padding: 0 53px;
+}
+.appointment .form-box{
+    background-color: var(--title-color);
+    font-family: var(--briyani-font);
+}
+.appointment .white-text-box{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 80px 53px 40px;
+}
+.appointment .white-text-box *{
+    color: var(--grey-title-color);
+}
+
+/* appointment-form */
+.appointment .form-box form{
+    padding: 40px 0;
+}
+.appointment .form-box form .form-label{
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 20px;
+}
+.appointment .form-box form .form-control{
+    border-radius: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 13px 16px;
+    background-color: var(--color-white);
+}
+.appointment .form-box form .form-submit-btn{
+    border: none;
+}
+/* testimonial */
+.testimonial{
+
+}
+.testimonial .testimonial-container{
+    width: 54%;
+    font-family: var(--briyani-font);
+}
+.testimonial .testimonial-text .sub-title{
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 28px;
+}
+.testimonial .testimonial-text .testimonial-name{
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 700;
+}
+.testimonial .testimonial-container .slider-dots{
+    display: flex;
+    gap: 1rem;
+}
+.testimonial .testimonial-container .slider-dots .dots{
+    height: 4px;
+    width: 35px;
+    background-color: #D9D9D9;
+}
+.testimonial .testimonial-container .slider-dots .dots.active{
+    background-color: var(--title-color);
+}
+.testimonial .description{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* doctor-quotes */
+.doctor-quotes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doctor-quotes .container .row{
+border: 10px solid var(--title-color);
+height: 485px;
+padding: 40px 30px 0;
+}
+.doctor-quotes-img{
+position: relative;
+}
+.doctor-quotes-img img{
+position: absolute;
+bottom: 0;
+left: 0;
+}
+.doctor-quotes .sub-title{
+    color: var(--title-color);
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 25px;
+    font-family: var(--briyani-font);
+}
+.doctor-quotes .doctor-quotes-text .description{
+color: var(--title-color);
+line-height: 24px;
+font-size: 16px;
+}
+.doctor-quotes .doctor-quotes-text .testimonial-name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2ABAC3;
+}
+.doctor-quotes .doctor-quotes-text .testimonial-place{
+    color: #7D7D7D;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* Footer */
+.footer{
+    background-color: #2ABAC3;
+    font-family: var(--briyani-font);
+}
+.footer .row{
+    
+}
+.footer .links-menu .title{
+font-weight: 600;
+color: var(--title-color);
+font-size: 34px;
+line-height: 37px;
+}
+.footer ul{
+    list-style-type: none;
+    padding-left: 0;
+
+}
+.footer ul li a{
+    color: #085055;
+    transition: 0.5s ease;
+}
+
+.footer ul li a:hover{
+    color: var(--color-white);
+}
+.footer .quick-links ul li:not(:last-child){
+margin-bottom: 0.5rem;
+}
+.footer .links-menu{
+    padding: 1rem 0;
+}
+.footer .google-map{
+    padding: 0;
+}
+.footer .footer-menu{
+    position: relative;
+}
+.footer .footer-menu .copyright-container{
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 25px; */
+}
+    .footer .footer-menu .copyright-container p{
+        font-size: 13px;
+        font-family: var(--briyani-font);
+    }
+
+/* @media screen and (min-width:1440px){
+    
+}
+@media (min-width:1200px) and (max-width:1339.90px){
+    
+}
+@media (min-width:1024px) and (max-width:1199.90px){
+    
+}
+@media (min-width:992px) and (max-width:1023.90px){
+    
+}
+@media (min-width:768px) and (max-width:991.90px){
+    
+}
+@media (min-width:567px) and (max-width:767.90px){
+    
+}
+@media (min-width:475px) and (max-width:566.90px){
+    
+}
+@media (min-width:356px) and (max-width:476.90px){
+    
+}
+@media (min-width:255px) and (max-width:355.90px){
+    
+} */
+@media screen and (min-width:1400px){
+    .hero-page .textbox-main .sub-textbox {
+        margin-top: 12rem;
+    }
+}
+@media screen and (min-height:1024px) and (orientation: portrait){
+    .hero-page .img-box-main .img-box {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1399.90px){
+    .container,.container-fluid{
+        padding: 0 60px;
+        margin: 0 auto;
+    }
+    .hero-page .title{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .hero-page .text-box .description {
+        width: inherit;
+    }
+    .hero-page .sub-textbox .description {
+        width: 70%;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+    .title{
+        font-size: 32px;
+    }
+    .testimonial .testimonial-text .sub-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199.90px){
+    .container,.container-fluid{
+        padding: 0 60px;
+        margin: 0 auto;
+    }
+
+    .navbar .navbar-brand{
+        width: 45%;
+    }
+    .navbar .navbar-nav{
+        column-gap:1.5rem !important;
+    }
+    .book-apt-btn{
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .hero-page .title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .hero-page .textbox-main .textbox {
+        margin-top: 4rem;
+    }
+    .hero-page .textbox-main {
+        padding: 0 60px;
+    }
+    .hero-page .description{
+        width: 85%;
+    }
+    
+    .hero-page .sub-textbox .description {
+        width: 80%;
+    }
+    .section-padding {
+        padding: 60px 0;
+    }
+    .appointment .form-box form{
+        width: 100%;
+    }
+    .title{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .description{
+        font-size: 16px !important;
+    }
+    .testimonial .testimonial-text .sub-title {
+        font-size: 1.3rem;
+    }
+    .services .services-card .services-description {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .services .services-card .services-title{
+        font-size: 17px;
+    }
+    .specialist .specialist-card .specialist-text h3 {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 600;
+    }
+    .specialist .specialist-card .specialist-text p {
+        font-size: 14px;
+    }
+    .doctor-quotes{
+        height: inherit;
+    }
+    .doctor-quotes .title{
+        margin-bottom: 8px !important;
+    }
+    .doctor-quotes .sub-title{
+        font-size: 1.3rem;
+    }
+    .aboutus .aboutus-text p{
+        font-size:14px !important;
+        line-height: 22px;
+        margin-bottom: 1rem !important;
+
+    }
+    .appointment .white-text-box * {
+        width: 400px;
+    }
+    .aboutus .aboutus-text {
+     
+    }
+    .footer .links-menu .title {
+    color: #085055;
+        font-size: 28px;
+        line-height: 35px;
+        margin-bottom: 0.8rem !important;
+        text-transform: capitalize;
+    }
+    /* .about-us .container{
+        width:95%;
+    } */
+}
+@media screen and (min-width:768px) and (max-width:991.90px){
+    .navbar .container-fluid {
+        padding: 0 40px;
+    }
+  
+    .hero-page .title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .hero-page .textbox-main {
+        padding: 0 40px;
+    }
+    .hero-page .description {
+        font-size: 14px !important;
+        line-height: 22px !important;
+        width: 100%;
+    }
+    .services .services-card-main-container{
+       
+        margin: 0 auto;
+        display: grid !important;
+             gap: 3rem;
+            grid-template-columns: repeat(2,1fr);
+    }
+    .services .services-card-main{
+        width: 100%;
+    }
+    .title{
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .specialist .specialist-container{
+        flex-wrap: wrap;
+        row-gap: 2.5rem;
+    }
+    .specialist .description {
+        width: 400px;
+        font-size: 16px;
+    }
+    .specialist .specialist-card{
+        width: 40%;
+    }
+    .specialist .container{
+        max-width: 90%;
+    }
+    .hero-page .textbox-main .textbox {
+        margin-top: 0rem !important;
+        position: absolute;
+        width: 80%;
+        left: 50%;
+        top: 5%;
+        transform: translate(-50%, 0%);
+    }
+    .services .services-card .services-title {
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .appointment .form-box form {
+        width: 90%;
+    }
+    .appointment .form-box form .form-control {
+        font-size: 15px;
+    }
+    .appointment .white-text-box .description{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .appointment .form-box {
+        padding: 0 30px;
+    }
+    .appointment .text-box {
+        background-size: contain;
+        background-attachment: fixed;
+    }
+    .aboutus .container{
+        max-width: 90%;
+    }
+    .aboutus{
+        background-image: url(./images/about-img.png);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .aboutus .container .row{
+        align-items: flex-start !important;
+    }
+    .aboutus .aboutus-text p {
+        font-size: 14px;
+        line-height: 22px;
+        color: #6a6a6a;
+    }
+    .aboutus .aboutus-img{
+        display: none;
+    }
+    .aboutus .aboutus-text{
+        width: 100%;
+        margin: 0 auto;
+        padding: 2rem;
+        background-color: #ffffffd4;
+    }
+    .hero-page .img-box-main .img-box {
+        height: 80vh;
+    }
+    .doctor-quotes .title{
+        margin-bottom: .5rem !important;
+    }
+    .doctor-quotes .doctor-quotes-text .description{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .doctor-quotes .container{
+        max-width: 95%;
+    }
+    .doctor-quotes .container .row{
+        height: inherit;
+        align-items: flex-end;
+        padding: 20px 0px 0;
+    }
+    .doctor-quotes .doctor-quotes-img{
+        width: 50%;
+    }
+    .doctor-quotes .doctor-quotes-text{
+        margin-bottom: .5rem;
+    }
+    .footer .title {
+        font-size: 28px !important;
+        line-height: 35px !important;
+    }
+
+}
+@media screen and (max-width:991.90px){
+    .hero-page .animation-mouse{
+        border-color: var(--title-color);
+    }
+    .hero-page .animation-mouse::before{
+        background: var(--title-color);
+    }
+    .collapse:not(.show) {
+        display: block;
+        position: fixed;
+        top: -100%;
+
+    }
+    .navbar .navbar-nav{
+        transition: .5s ease;
+        position: fixed;
+        width: 100%;
+        height: 100dvh;
+       justify-content: space-evenly;
+        padding: 0 0 2rem;
+        top: 65px;
+        left: 0;
+        background-color: #ffffffe6;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+    .navbar .nav-item .nav-link {
+        line-height: 1.2rem;
+        font-size: 1.6rem;
+    }
+    .navbar .contactus-btn .nav-link {
+        color: inherit;
+        padding: inherit !important;
+        background: inherit;
+        border-radius: inherit;
+    }    
+}
+@media screen and (min-width:576px) and (max-width:767.90px){
+    .hero-page{
+        background-image: url(./images/hero-img.png);
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: cover;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .hero-page .textbox-main {
+        height: 90vh;
+    }
+    .hero-page .img-box-main{
+        display: none;
+    }
+    .hero-page .description{
+        width: 100%;
+    }
+    .hero-page .sub-textbox .description {
+        width: 80%;
+        background-color: #fff9;
+        padding: 1.5rem 1rem;
+        border-radius: 20px;
+    }
+    .hero-page .textbox-main .textbox {
+        margin-top:inherit;
+        background-color: #fff9;
+        padding: 3rem 1rem;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 80%;
+    
+    }
+    .footer .google-map {
+        padding: 0;
+        height: 400px;
+    }
+    .services .services-card-main-container{
+        flex-direction: column;
+        row-gap: 3rem;
+        align-items: center;
+    }
+    .navbar .container-fluid {
+        padding: 0 12px;
+    }
+    .navbar .navbar-brand{
+        width: 70%;
+    }
+   
+    .services .services-card-main {
+        width: 70%;
+    }
+    .aboutus .aboutus-text{
+        width: inherit;
+        padding: 2rem;
+        background-color: #ffffffd4;
+        position: relative;
+        z-index: 2;
+    }
+    .specialist .specialist-card {
+        min-width: 350px;
+        border: 3px solid #267075;
+        border-radius: 20px;
+    }
+    .specialist .specialist-card .specialist-text {
+        padding: 15px 20px;
+        background-color: #DCDCDC;
+        color: #323232;
+        transition: .4s ease;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .specialist .specialist-container{
+        overflow-y: scroll;
+        justify-content: inherit !important;
+        column-gap: 2rem;
+        padding-bottom: 2rem;
+    }
+    .specialist .specialist-container .specialist-card:first-child{
+        margin-left:15%;
+    }
+    .specialist .specialist-container .specialist-card:last-child{
+        margin-right:15%;
+    }
+    .specialist .specialist-container{
+        max-width: 100% !important;
+    }
+    .specialist .container{
+        max-width: 100%;
+    }
+    .specialist .description{
+        width: 80%;
+    }
+    .specialist {
+        padding: 20px 0;
+    }
+    .aboutus .row{
+        margin: 0;
+    }
+    .aboutus{
+        position: relative;
+        z-index: 0;
+    }
+    .aboutus::after{
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1;
+        opacity: .2;
+    }
+    .aboutus .aboutus-img{
+        margin-bottom: 3rem;
+        padding: 0px;
+        position: relative;
+        z-index: 2;
+    }
+    .appointment.section-padding{
+        padding: 0px 0px 80px;
+    }
+    .testimonial .testimonial-img{
+        margin-bottom: 5rem;
+    } 
+    .testimonial .testimonial-container {
+        width: 100%;
+    }
+    .testimonial .container{
+        max-width: 90%;
+    }
+    .aboutus{
+    background-image: url(./images/about-img.png);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    .doctor-quotes .container{
+        max-width: 90%;
+    }
+    .doctor-quotes.section-padding{
+        padding: 0px 0px 80px;
+    }
+    .doctor-quotes .container .row{
+        height: inherit !important;
+        flex-direction: column-reverse;
+    }
+    .doctor-quotes .doctor-quotes-text{
+        margin-bottom: 2rem;
+    }
+    .doctor-quotes-img img{
+        position: inherit;
+    }
+    .footer .links-menu {
+        padding: 2rem 0;
+    }
+    .footer .title{
+        margin-bottom: .5rem !important;
+        text-transform: capitalize !important;
+    }
+    .hero-page .title {
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width:575.90px) {
+    /* .navbar .navbar-nav {
+        width: 100%;
+        height: 50vh;
+        row-gap: 1.5rem;
+        position: fixed;
+        padding: 5rem 0 2rem;
+        top: 97px;
+        left: 50%;
+        background-color: #ffffff90;
+        transform: translate(-50%,-0% );
+    } */
+    .hero-page .title{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .hero-page{
+        background-image: url(./images/hero-img.png);
+        background-repeat: no-repeat;
+        position: relative;
+        background-size: cover;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .hero-page .textbox-main {
+        height: 85vh;
+        padding: 0 20px;
+    }
+    .hero-page .img-box-main{
+        display: none;
+    }
+    .hero-page .description{
+        width: 100%;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .hero-page .sub-textbox .description {
+        width: 80%;
+        background-color: #fff9;
+        padding: 1.5rem 1rem;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+    .hero-page .textbox-main .textbox {
+        margin-top:inherit;
+        background-color: #fff9;
+        padding: 1.5rem 1rem;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 80%;
+    }
+    .footer .google-map {
+        padding: 0;
+        height: 400px;
+    }
+    .services .services-card-main-container{
+        flex-direction: column;
+        row-gap: 3rem;
+        align-items: center;
+    }
+    .navbar .container-fluid {
+        padding: 0 12px;
+    }
+    .navbar .navbar-brand{
+        width: 80%;
+    }
+   
+    .services .services-card-main {
+        width: 90%;
+    }
+    .aboutus .aboutus-text{
+        width: inherit;
+        padding: 2rem;
+        background-color: #ffffffd4;
+        position: relative;
+        z-index: 2;
+    }
+    .specialist .specialist-card {
+        min-width: 250px;
+        border: 3px solid #267075;
+        border-radius: 20px;
+    }
+    .specialist .specialist-card .specialist-text {
+        padding: 15px 20px;
+        background-color: #DCDCDC;
+        color: #323232;
+        transition: .4s ease;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .specialist .specialist-container{
+        overflow-y: scroll;
+        justify-content: inherit !important;
+        column-gap: 2rem;
+        padding-bottom: 2rem;
+    }
+    .specialist .specialist-container .specialist-card:first-child{
+        margin-left:15%;
+    }
+    .specialist .specialist-container .specialist-card:last-child{
+        margin-right:15%;
+    }
+    .specialist .specialist-container{
+        max-width: 100% !important;
+    }
+    .specialist .container{
+        max-width: 100%;
+    }
+    .specialist .description{
+        width: 80%;
+    }
+    .specialist {
+        padding: 20px 0;
+    }
+    .aboutus .row{
+        margin: 0;
+    }
+    .aboutus{
+        position: relative;
+        z-index: 0;
+    }
+    .aboutus::after{
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1;
+        opacity: .2;
+    }
+    .aboutus .aboutus-img{
+        margin-bottom: 3rem;
+        padding: 0px;
+        position: relative;
+        z-index: 2;
+    }
+    .appointment.section-padding{
+        padding: 0px 0px 80px;
+    }
+    .testimonial .testimonial-img{
+        margin-bottom: 5rem;
+    } 
+    .testimonial .testimonial-container {
+        width: 100%;
+    }
+    .testimonial .container{
+        max-width: 90%;
+    }
+    .aboutus{
+    background-image: url(./images/about-img.png);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+    .doctor-quotes.section-padding{
+        padding: 0px 0px 80px;
+    }
+    .doctor-quotes .container .row{
+        height: inherit !important;
+        flex-direction: column-reverse;
+    }
+    .doctor-quotes .doctor-quotes-text{
+        margin-bottom: 2rem;
+    }
+    .doctor-quotes-img img{
+        position: inherit;
+    }
+    .title{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .footer .title{
+        margin-bottom: .5rem !important;
+        margin-bottom: 0.5rem !important;
+        font-size: 24px !important;
+        line-height: 32px !important;
+        text-transform: capitalize;
+        text-align: left;
+    }
+    .footer .quick-links{
+        display: none;
+    }
+    .appointment .white-text-box {
+        padding: 80px 20px 40px !important;
+    }
+    .appointment .form-box {
+        padding: 0 20px;
+    }
+    .footer .links-menu{
+        padding: 1rem 0 1.5rem;
+    }
+    
+}
