@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+    font-family: 'Biryani', sans-serif;
+}
+img{
+    width: 100%;
+    
+}
+
+.flex-item{
+   display: flex;
+}
+.gallery-heading{
+    color: #18676C;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+}
+.gallery-para{
+    color: #989898;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29.52px;
+    width: 34%;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 auto;
+}
+@media screen and (min-width:576px) and (max-width:767.90px){
+    .gallery-para{
+        width: 84%;
+    }
+    .main-flex{
+        
+            max-width: 740px !important;
+       
+    }
+ 
+}
+
+@media (min-width:475px) and (max-width:566.90px){
+    .gallery-para{
+        font-size: 16px;
+        width: 100%;
+    }
+    .flex-item{
+        flex-direction: column;
+    }
+}
+@media (min-width:356px) and (max-width:476.90px){
+    .gallery-heading{
+        font-size: 32px;
+    }
+    .gallery-para {
+        font-size: 14px;
+        width: 96%;
+    }
+    .flex-item{
+        flex-direction: column;
+    }
+}
+@media (min-width:768px) and (max-width:991.90px){
+    .gallery-para{
+        width: 64%;
+    }
+    .main-flex{
+        
+            max-width: 846px !important;
+       
+    }
+}
+@media (min-width:992px) and (max-width:1023.90px){
+    .gallery-para{
+        width: 46%;
+    }
+}
+@media (min-width:1024px) and (max-width:1199.90px){
+    .gallery-para{
+        width: 50%;
+    }
+    .main-flex{
+        max-width: 1150px !important;
+    }
+}
+@media (min-width:1200px) and (max-width:1339.90px){
+    .gallery-para{
+        width: 46%;
+    }
+    .main-flex{
+        max-width: 1150px !important;
+    }
+}
