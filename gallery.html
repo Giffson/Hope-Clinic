@@ -4,60 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- google font -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400;600;700;800;900&display=swap');
-      </style>
-      <!-- css link -->
-      <link rel="stylesheet" href="gallerystyle.css">
-      <!-- Bootstrap Link -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Hope - Ultrasound imaging diagnostics and Orthopedic surgical Centre.</title>
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap 5.3.0 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- slick Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 </head>
 <body>
-    <section class="gallery-page">
-        <h1 class="gallery-heading text-center mt-5">OUR GALLERY</h1>
-        <p class="gallery-para">We Share Every moments with our doctors, nurses & Everyone. just look our self's
+    <section class="navbar navbar-expand-lg col-md-12">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <img src="images/Logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+                <ul class=" nav navbar-nav column-gap-5 align-items-center">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#aboutUs" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link galleryPage">Gallery</a>
+                    </li>
+                    <li class="nav-item  contactus-btn">
+                        <a href="index.html#contactUs" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-page section-padding">
+        <h1 class="title text-center mb-1">OUR GALLERY</h1>
+        <p class="description mb-5 col-xl-5 col-lg-5 col-md-4 col-4 mx-auto">We Share Every moments with our doctors, nurses & Everyone. just look our self's
         </p>
         <div class=" container main-flex">
-            <div class="flex-item">
-                <div class="grid-item-1"><img src="./Hope-Clinic/img-1.png" alt="" class="img-fluid"></div>
-                <div class="grid-item-2"><img src="./Hope-Clinic/img-2.png" alt="" class="img-fluid"></div>
-                <div class="grid-item-3"><img src="./Hope-Clinic/img-3.png" alt="" class="img-fluid"></div>
-                <div class="grid-item-4"><img src="./Hope-Clinic/img-4.png" alt="" class="img-fluid"></div>
+            <div class="d-flex">
+                <div class="grid-item-1"><img src="./images/img-1.svg" alt="" class="img-fluid"></div>
+                <div class="grid-item-2"><img src="./images/img-2.svg" alt="" class="img-fluid"></div>
+                <div class="grid-item-3"><img src="./images/img-3.svg" alt="" class="img-fluid"></div>
+                <div class="grid-item-4"><img src="./images/img-4.svg" alt="" class="img-fluid"></div>
             </div>
        
     
-            <div class="flex-item">
-                <div class="grid-item-5"><img src="./Hope-Clinic/img-5.png" alt="" class="img-fluid"></div>
-                <div class="grid-item-6"><img src="./Hope-Clinic/img-6.png" alt="" class="img-fluid"></div>
-                <div class="grid-item-7"><img src="./Hope-Clinic/img-7.png" alt="" class="img-fluid"></div>
-                <div class="grid-item-8"><img src="./Hope-Clinic/img-8.png" alt="" class="img-fluid"></div>
+            <div class="d-flex">
+                <div class="grid-item-5"><img src="./images/img-5.svg" alt="" class="img-fluid"></div>
+                <div class="grid-item-6"><img src="./images/img-6.svg" alt="" class="img-fluid"></div>
+                <div class="grid-item-7"><img src="./images/img-7.svg" alt="" class="img-fluid"></div>
+                <div class="grid-item-8"><img src="./images/img-8.svg" alt="" class="img-fluid"></div>
             </div>
      
   
-            <div class="flex-item">
-                <div class="grid-item-9"><img src="./Hope-Clinic/img-9.png" alt=""  class="img-fluid"></div>
-                <div class="grid-item-10"><img src="./Hope-Clinic/img-10.png" alt="" class="img-fluid"></div>
-                <div class="grid-item-11"><img src="./Hope-Clinic/img-11.png" alt="" class="img-fluid"></div>
-                <div class="grid-item-12"><img src="./Hope-Clinic/img-12.png" alt="" class="img-fluid"></div>
+            <div class="d-flex">
+                <div class="grid-item-9"><img src="./images/img-9.svg" alt=""  class="img-fluid"></div>
+                <div class="grid-item-10"><img src="./images/img-10.svg" alt="" class="img-fluid"></div>
+                <div class="grid-item-11"><img src="./images/img-11.svg" alt="" class="img-fluid"></div>
+                <div class="grid-item-12"><img src="./images/img-12.svg" alt="" class="img-fluid"></div>
             </div>
         </div>
-        <!-- <div class="grid-container">
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-1.svg" alt="" class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-2.svg" alt="" class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-3.svg" alt="" class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-4.svg" alt="" class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-5.svg" alt="" class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-6.svg" alt="" class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-7.svg" alt="" class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-8.svg" alt="" class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-9.svg" alt=""  class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-10.svg" alt="" class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-11.svg" alt="" class="img-fluid"></div>
-            <div class="grid-item"><img src="./Hope-Clinic-images/img-12.svg" alt="" class="img-fluid"></div>
-        </div>  -->
+    </section>
+    <section class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="google-map col-xl-4 col-lg-4 col-md-4">
+                    <!-- <img src="./images/google-map.png" alt=""> -->
+                    <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Columbia,+SC,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div>
+                <div class="footer-menu col-xl-8 col-lg-8 col-md-8">
+                    <div class="links-menu d-flex justify-content-between">
+                        <div class="quick-links">
+                            <h2 class="title mb-4">Quick Links</h2>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="social-media">
+                            <h2 class=" title mb-4">Social Media</h2>
+                            <ul class="d-flex align-items-center gap-3">
+                                <li><a href="#"><i class="fa-brands fa-square-facebook fa-xl"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright-container col-xl-12 col-lg-12 col-md-12 d-flex justify-content-between ">
+                        <p>©2020 by Hope Clinic and Diagnostics.</p>
+                        <p>Web Design & Development by <span class="text-white">Scotrand</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 </html>

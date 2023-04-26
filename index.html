@@ -15,13 +15,12 @@
     <!-- slick Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <!--  -->
 </head>
 <body>
    
         <section class="navbar navbar-expand-lg col-md-12">
             <div class="container-fluid">
-                <a href="" class="navbar-brand">
+                <a href="index.html" class="navbar-brand">
                     <img src="images/Logo.svg" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="navbarText" aria-expanded="true" aria-label="Toggle navigation">
@@ -30,7 +29,7 @@
                   <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
                     <ul class=" nav navbar-nav column-gap-5 align-items-center">
                         <li class="nav-item">
-                            <a href="" class="nav-link active" aria-current="page">Home</a>
+                            <a href="index.html" class="nav-link active" aria-current="page">Home</a>
                         </li>
                         <li class="nav-item">
                             <a href="#aboutUs" class="nav-link">About Us</a>
@@ -39,7 +38,7 @@
                             <a href="" class="nav-link">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link galleryPage">Gallery</a>
+                            <a href="gallery.html" class="nav-link galleryPage">Gallery</a>
                         </li>
                         <li class="nav-item  contactus-btn">
                             <a href="#contactUs" class="nav-link">Contact Us</a>
@@ -317,49 +316,6 @@
             </div>
         </section>
 
-        <section class="gallery-page">
-            <h1 class="gallery-heading text-center mt-5">OUR GALLERY</h1>
-            <p class="gallery-para mx-auto">We Share Every moments with our doctors, nurses & Everyone. just look our self's
-            </p>
-            <div class=" container main-flex">
-                <div class="d-flex">
-                    <div class="grid-item-1"><img src="./images/img-1.svg" alt="" class="img-fluid"></div>
-                    <div class="grid-item-2"><img src="./images/img-2.svg" alt="" class="img-fluid"></div>
-                    <div class="grid-item-3"><img src="./images/img-3.svg" alt="" class="img-fluid"></div>
-                    <div class="grid-item-4"><img src="./images/img-4.svg" alt="" class="img-fluid"></div>
-                </div>
-           
-        
-                <div class="d-flex">
-                    <div class="grid-item-5"><img src="./images/img-5.svg" alt="" class="img-fluid"></div>
-                    <div class="grid-item-6"><img src="./images/img-6.svg" alt="" class="img-fluid"></div>
-                    <div class="grid-item-7"><img src="./images/img-7.svg" alt="" class="img-fluid"></div>
-                    <div class="grid-item-8"><img src="./images/img-8.svg" alt="" class="img-fluid"></div>
-                </div>
-         
-      
-                <div class="d-flex">
-                    <div class="grid-item-9"><img src="./images/img-9.svg" alt=""  class="img-fluid"></div>
-                    <div class="grid-item-10"><img src="./images/img-10.svg" alt="" class="img-fluid"></div>
-                    <div class="grid-item-11"><img src="./images/img-11.svg" alt="" class="img-fluid"></div>
-                    <div class="grid-item-12"><img src="./images/img-12.svg" alt="" class="img-fluid"></div>
-                </div>
-            </div>
-            <!-- <div class="grid-container">
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-1.svg" alt="" class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-2.svg" alt="" class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-3.svg" alt="" class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-4.svg" alt="" class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-5.svg" alt="" class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-6.svg" alt="" class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-7.svg" alt="" class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-8.svg" alt="" class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-9.svg" alt=""  class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-10.svg" alt="" class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-11.svg" alt="" class="img-fluid"></div>
-                <div class="grid-item"><img src="./Hope-Clinic-images/img-12.svg" alt="" class="img-fluid"></div>
-            </div>  -->
-        </section>
 
     <!-- Bootstrap Popper 5.3.0 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
@@ -370,9 +326,11 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-        $('.galleryPage').hasClass('active'){
-            $('.gallery-page').show;
-        }
+        // $('.galleryPage').click(function(){
+        //     alert("Gallery Page is Working");
+        //     // $('.gallery-page').addClass('active');
+        // });
+        $('.galleryPage').toggleClass('active');
 
         $('.nav-link').click(function(){
             debugger;
