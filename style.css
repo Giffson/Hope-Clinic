@@ -105,6 +105,9 @@ font-size: 13px;
     color: var(--title-color);
     font-size: 18px;
 }
+.book-apt-btn:hover{
+    scale: 1.1;
+}
 /* Hero Page */
 .hero-page{
     background-color: #57BCC2;

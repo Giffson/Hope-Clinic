@@ -15,6 +15,8 @@
     <!-- slick Css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <!-- AOS Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
    
@@ -50,8 +52,8 @@
         <section class="hero-page">
             <div class="container-fluid">
                 <div class="row">
-                    <div class=" col-xl-6 col-lg-6 col-md-6 textbox-main">
-                        <div class="textbox">
+                    <div class=" col-xl-6 col-lg-6 col-md-6 textbox-main ">
+                        <div class="textbox "data-aos="fade-up">
                             <h1 class="title mb-1">
                                 Happiness is the Highest form of Health
                             </h1>
@@ -325,11 +327,15 @@
     <!--JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // $('.galleryPage').click(function(){
         //     alert("Gallery Page is Working");
         //     // $('.gallery-page').addClass('active');
         // });
+        AOS.init();
+
         $('.galleryPage').toggleClass('active');
 
         $('.nav-link').click(function(){
