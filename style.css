@@ -906,9 +906,7 @@ margin-bottom: 0.5rem;
     .footer ul li a:hover{
         color: inherit;
     }
-    .description{
-        font-size: 14px;
-    }
+ 
     
 }
 @media screen and (min-width:576px) and (max-width:767.90px){
@@ -1080,7 +1078,9 @@ margin-bottom: 0.5rem;
     }
 }
 @media screen and (max-width:575.90px) {
- 
+    .description{
+        font-size: 14px !important;
+    }
     /* .footer .footer-menu .copyright-container{
         flex-direction: column;
         justify-content: center;
