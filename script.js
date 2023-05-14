@@ -4,7 +4,7 @@
         // });
         AOS.init();
 
-// $('.galleryPage').toggleClass('active');
+$('.galleryPage').toggleClass('active');
 
 $('.nav-link').click(function(){
     debugger;
